@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo b {
+  color: #fff;
+  font-size: 20px;
+}
+
+nav {
+  position: relative;
+}
+
+nav .toggle-btn {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li:hover {
+  opacity: 1;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.3s;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  background-color: #333;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  margin: 0;
+}
+
+.btn1 {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background-color: rgb(41, 6, 6);
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  nav .toggle-btn {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    background-color: #333;
+    position: fixed;
+    top: 60px; 
+    left: 0;
+    height: 45%; 
+    overflow-y: auto; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 10;
+  }
+
+  nav ul.show {
+    display: table;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 0;
+  }
+
+  nav ul li a {
+    width: 100%;
+    display: block;
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    position: static;
+    background-color: #444;
+    width: 100%;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .btn1 {
+    width: 100px;
+    margin: 0;
+    text-align: left;
+  }
+}
