@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 07, 2024 at 11:00 PM
+-- Generation Time: Jul 07, 2024 at 11:04 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `menu` (
   `id` int(10) NOT NULL,
+  `image` text NOT NULL,
   `foodName` text NOT NULL,
   `description` text NOT NULL,
   `size` text NOT NULL,
