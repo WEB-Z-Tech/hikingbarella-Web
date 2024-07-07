@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      body {
+          background-image: url('img/background1.jpg');
+          background-size: cover; 
+          background-repeat: no-repeat; 
+          background-position: center; 
+          height: 100vh; 
+          margin: 0; 
+      }
+  </style>
     <title>Testimonial</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="D:\Web Z tech\hikingbarella-Web\aa.png" alt="LOGO" />
+        <img src="img/logo.png" alt="LOGO" />
         <b>NYUS</b>
       </div>
       <nav>
         <button class="toggle-btn" id="toggle-btn">&#9776;</button>
         <ul id="nav-links">
-          <li><a href="pro.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html" class="active">About Us</a></li>
           <li class="dropdown">
             <a href="#">Menu &#9662;</a>
@@ -36,6 +46,7 @@
     <main class="content">
       <section>
         <h1 class="center">Testimonial</h1>
+        <div class="para">
         <p>
           Welcome to NYUS. We are committed to providing the best dining
           experience with a focus on quality, service, and innovation.
@@ -47,6 +58,7 @@
         <p>
           We hope you enjoy your time with us and look forward to serving you.
         </p>
+      </div>
       </section>
     </main>
     <script src="pro.js"></script>
