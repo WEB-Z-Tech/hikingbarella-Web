@@ -15,4 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
       navLinks.classList.remove("show");
     });
   });
+
+  const currentPath = window.location.pathname.split("/").pop();
+  navLinkItems.forEach((link) => {
+    if (link.getAttribute("href") === currentPath || (currentPath === '' && link.getAttribute("href") === 'index.html')) {
+      link.classList.add("active");
+    }
+  });
 });
