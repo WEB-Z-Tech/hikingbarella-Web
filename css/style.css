@@ -117,25 +117,26 @@ nav ul li a.active {
 .center {
   text-align: center;
   font-size: 60px;
+  margin-bottom: 20px;
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+  color: aliceblue;
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
-  color: #fff;
-  text-align: center; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .para {
-  margin-top: 40px; 
-  color: aliceblue;
-  text-align: justify;
-  text-justify: inter-word;
-  hyphens: auto;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 20px;
+  margin-left: 240px;
+}
+.para p {
+  margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   nav .toggle-btn {
@@ -188,13 +189,14 @@ nav ul li a.active {
     margin: 0;
     text-align: left;
   }
-
-  .content {
-    margin: 10px;
-    padding: 10px;
+  .center{
+    font-size: 30px;
   }
-
+  .content {
+    width: 100%;
+    padding: 10px;
+  }  
   .para {
-    margin-top: 40px;
+    margin-left: 90px;
   }
 }
