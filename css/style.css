@@ -7,11 +7,20 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 20px 10px;
   background-color: transparent;
   color: #fff;
 }
-
+.search-input{
+  border: none;
+  outline: none;
+  padding: 7px;
+  border-radius: 10px;
+  width: 100px;
+  height: 10px;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -135,68 +144,73 @@ nav ul li a.active {
   margin-top: 20px;
   margin-left: 240px;
 }
+
 .para p {
   margin-bottom: 10px;
 }
+
 @media (max-width: 768px) {
   nav .toggle-btn {
-    display: block;
+      display: block;
   }
 
   nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: left;
-    background-color: #333;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    height: 45%;
-    overflow-y: auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 10;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+      background-color: #333;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      height: 45%;
+      overflow-y: auto;
+      justify-content: flex-start;
+      align-items: flex-start;
+      z-index: 10;
   }
 
   nav ul.show {
-    display: flex;
+      display: flex;
   }
 
   nav ul li {
-    width: 100%;
-    margin: 0;
+      width: 100%;
+      margin: 0;
   }
 
   nav ul li a {
-    width: 100%;
-    display: block;
-    padding: 10px;
+      width: 100%;
+      display: block;
+      padding: 10px;
   }
 
   .dropdown-content {
-    position: static;
-    background-color: #444;
-    width: 100%;
+      position: static;
+      background-color: #444;
+      width: 100%;
   }
 
   .dropdown:hover .dropdown-content {
-    display: block;
+      display: block;
   }
 
   .btn1 {
-    width: 100%;
-    margin: 0;
-    text-align: left;
+      width: 100%;
+      margin: 0;
+      text-align: left;
   }
-  .center{
-    font-size: 30px;
+
+  .center {
+      font-size: 30px;
   }
+
   .content {
-    width: 100%;
-    padding: 10px;
-  }  
+      width: 100%;
+      padding: 10px;
+  }
+
   .para {
-    margin-left: 90px;
+      margin-left: 90px;
   }
 }
