@@ -7,11 +7,33 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 20px 10px;
   background-color: transparent;
   color: #fff;
 }
 
+.search-input {
+  border: 1px solid #fff;  
+  outline: none;          
+  padding: 7px 30px 7px 10px; 
+  border-radius: 10px;
+  width: 140px;
+  height: 25px;
+  font-size: 13px;
+  margin-bottom: 5px;
+  background-color: transparent;  
+  box-sizing: border-box;  
+  color: #fff;
+}
+.search-icon {
+  position: absolute;
+  right: 5px;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #fff; 
+  opacity: 0.6;
+  cursor: pointer;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -49,9 +71,9 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-top: 5px;
   position: relative;
-  opacity: 0.8;
   transition: opacity 0.3s ease;
 }
 
@@ -61,9 +83,14 @@ nav ul li:hover {
 
 nav ul li a {
   color: #fff;
+  opacity: 0.8;
   text-decoration: none;
   padding: 8px 16px;
-  transition: background-color 0.3s;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li a.active {
+  opacity: 1;
 }
 
 .dropdown {
@@ -108,79 +135,98 @@ nav ul li a {
   background-color: rgb(41, 6, 6);
   color: #333;
 }
+
 .center {
   text-align: center;
+  font-size: 60px;
+  margin-bottom: 20px;
 }
+
 .content {
-  margin: 20px;
+  color: aliceblue;
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
-  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.para{
-  margin-top: 80px;
+
+.para {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-top: 20px;
+  margin-left: 240px;
+}
+
+.para p {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
   nav .toggle-btn {
-    display: block;
+      display: block;
   }
 
   nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    text-align: left;
-    background-color: #333;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    height: 45%;
-    overflow-y: auto;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 10;
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: left;
+      background-color: #333;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      height: 45%;
+      overflow-y: auto;
+      justify-content: flex-start;
+      align-items: flex-start;
+      z-index: 10;
   }
 
   nav ul.show {
-    display: flex;
+      display: flex;
   }
 
   nav ul li {
-    width: 100%;
-    margin: 0;
+      width: 100%;
+      margin: 0;
   }
 
   nav ul li a {
-    width: 100%;
-    display: block;
-    padding: 10px;
+      width: 100%;
+      display: block;
+      padding: 10px;
   }
 
   .dropdown-content {
-    position: static;
-    background-color: #444;
-    width: 100%;
+      position: static;
+      background-color: #444;
+      width: 100%;
   }
 
   .dropdown:hover .dropdown-content {
-    display: block;
+      display: block;
   }
 
   .btn1 {
-    width: 100%;
-    margin: 0;
-    text-align: left;
+      width: 100%;
+      margin: 0;
+      text-align: left;
+  }
+
+  .center {
+      font-size: 30px;
   }
 
   .content {
-    margin: 10px;
-    padding: 10px;
+      width: 100%;
+      padding: 10px;
   }
-  .para {
-    margin-top: 40px;
-}
- .para {
-    margin-top: 20px;
-  }
-}
 
+  .para {
+      margin-left: 90px;
+  }
+  .search-icon {
+    left: 115px;
+  }
+}
