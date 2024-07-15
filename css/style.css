@@ -11,15 +11,28 @@ header {
   background-color: transparent;
   color: #fff;
 }
-.search-input{
-  border: none;
-  outline: none;
-  padding: 7px;
+
+.search-input {
+  border: 1px solid #fff;  
+  outline: none;          
+  padding: 7px 30px 7px 10px; 
   border-radius: 10px;
-  width: 100px;
-  height: 10px;
+  width: 140px;
+  height: 25px;
   font-size: 13px;
   margin-bottom: 5px;
+  background-color: transparent;  
+  box-sizing: border-box;  
+  color: #fff;
+}
+.search-icon {
+  position: absolute;
+  right: 5px;
+  top: 45%;
+  transform: translateY(-50%);
+  color: #fff; 
+  opacity: 0.6;
+  cursor: pointer;
 }
 .logo {
   display: flex;
@@ -212,5 +225,8 @@ nav ul li a.active {
 
   .para {
       margin-left: 90px;
+  }
+  .search-icon {
+    left: 115px;
   }
 }
