@@ -4,7 +4,6 @@
   }
   
   .fillter {
-    background-color: aquamarine;
     height: 400px;
     width: 400px;
     padding: 20px;
@@ -33,8 +32,8 @@
   .apply-button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background-color: #f8c13a;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -43,7 +42,7 @@
   }
   
   .apply-button:hover {
-    background-color: #0056b3;
+    background-color: #f8c13a;
   }
   
   
@@ -58,20 +57,37 @@
   .card {
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 200px;
     overflow: hidden;
     height: 320px;
-    position: relative; 
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+  }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  }
+  .card.elevated {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .card.elevated:hover {
+    transform: scale(1.05);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
   }
   
   .card-img {
     width: 100%;
     height: 45%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
   }
-  
+  .card-img:hover {
+    transform: scale(1.1);
+  }
   .card-content {
-    padding: 15px;
+    padding: 10px;
   }
   
   .card-title {
@@ -93,13 +109,14 @@
   }
   
   .number span {
-    background-color: #007BFF;
-    color: white;
+    background-color: #f8c13a;
+    color: rgb(0, 0, 0);
     padding: 5px 10px;
     cursor: pointer;
     user-select: none;
     border-radius: 5px;
     font-size: 10px;
+    font-weight: bold;
   }
   
   .number input {
@@ -119,9 +136,9 @@
   }
   
   .add-button {
-    background-color: #f8fc05;
+    background-color: #f8c13a;
     color: rgb(0, 0, 0);
-    font-weight: bolder;
+    font-weight: bold;
     border: none;
     padding: 3px 10px;
     cursor: pointer;
@@ -131,48 +148,53 @@
   .btn-icon {
     margin-top: 25%;
   }
-  .result{
-    background-color: rgb(255, 196, 1);
-    height: 1%;
-    margin-left: 280px;
-    width: 30%;
+  .cart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: beige;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    cursor: pointer;
   }
+
+  .cart-icon i {
+    font-size: 13px;
+    color: #d9042e;
+  }
+
   @media (max-width: 768px) {
     .layout {
-      flex-direction: column;
-      align-items: center;
+      flex-direction: column; 
     }
   
     .fillter {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
+      margin-left: 80px;
+      width: 236px;
+      height: 236px; 
+      margin-bottom: 20px; 
+      padding: 20px;
     }
   
     .card-container {
-      justify-content: center;
       margin-left: 0;
+      gap: 15px; 
     }
   
     .card {
-      width: 60%;
-      height: auto;
-      margin-left: 45px;
+      width: 65%; 
+      margin-bottom: 20px; 
+      margin-left: 80px;
+      align-items: center;
     }
-  
-    .number {
-      bottom: 15px; 
-      left: 15px;   
-    }
-  
-    .card-button {
-      justify-content: flex-end;
-      bottom: 15px; 
-      right: 15px;  
-    }
-  
-    .add-button {
-      width: auto;
+    .card-img{
+      height: 50%;
     }
   }
   
