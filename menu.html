@@ -1,212 +1,376 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/Menu.css" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu - Hiking Bar & Restaurant</title>
     <style>
-      .hero {
-        background-image: url('img/background2.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 55vh;
-      }
+        .nunito-custom {
+            font-family: "Nunito", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 14px;
+        }
+        
     </style>
-    <title>Menu</title>
-  </head>
-  <body class="container">
-    <section class="hero">
-      <header>
-        <div class="logo">
-          <img src="img/logo.png" alt="LOGO" />
-          <b>NYUS</b>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="">
+
+    <!-- Google Font -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header
+        style="background-image: url('/img//signeture-bg.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 70vh;">
+        <div class="container-xxl position-relative p-0"
+            style="background-image: url('/images/Untitled.jpeg'); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+            <nav class="navbar navbar-expand-lg navbar-dark px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0 position-absolute mt-4"
+                    style="display: flex; align-items: center; margin-left: -70px;">
+                    <i class="bi bi-dot text-warning" style="font-size: 900%;"></i>
+                    <h1 class="text-white mt-4 fw-bold"
+                        style="font-size: 120%; margin-left: -60px; letter-spacing: 10px;">NYUS</h1>
+                </a>
+
+                <button class="navbar-toggler btn-sm" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse mt-3" id="navbarCollapse" style="left:-17px; position: relative;">
+                    <div class="navbar-nav ms-auto py-0 pe-4">
+                        <a href="/index.html" class="nav-item nav-link mx-3">Home</a>
+                        <a href="/about.html" class="nav-item nav-link active mx-3">About US</a>
+                        <div class="nav-item dropdown">
+                            <a href="/menu.html" class="nav-link dropdown-toggle mx-3" id="menuDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Menu
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                                <li><a class="dropdown-item" href="#">Light Theme</a></li>
+                                <li><a class="dropdown-item" href="#">Dark Theme</a></li>
+                            </ul>
+                        </div>
+                        <a href="testimonial.html" class="nav-item nav-link mx-3">Testimonial</a>
+                        <a href="contact.html" class="nav-item nav-link mx-3">Contact</a>
+                    </div>
+                    <a href="/reservation.html" class="btn btn-outline-light px-3 text-uppercase rounded-0 custom-font"
+                        style="padding: 10px;">Reservation</a>
+                </div>
+            </nav>
+            <!-- nav body start -->
+            <div class="container-xxl py-5 mb-5 d-flex justify-content-center">
+                <div class="container my-5 py-5 text-center">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 mx-auto">
+                            <h1 class="display-3 text-white fw-bold" style="font-size: 73px;">Our Menu</h1>
+                            <p class="text-white mb-4 pb-2 mt-4 ">Massa praesent sit suspendisse ac
+                                volutpat amet.<br /> Commodo elit at non neque ullamcorper id.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center" style="margin-top: 75px;">
+                        <div class="border-start border-1 border-warning" style="height: 86px;"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- nav body end -->
         </div>
-        <nav>
-          <button class="toggle-btn" id="toggle-btn">&#9776;</button>
-          <ul id="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li class="dropdown">
-              <a href="menu.html">Menu &#9662;</a>
-              <ul class="dropdown-content">
-                <li><a href="menu.html" class="active">Light</a></li>
-                <li><a href="menu.html">Dark</a></li>
-              </ul>
-            </li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-              <input type="text" placeholder="Search Menu" class="search-input">
-              <i class="fas fa-search search-icon"></i>
-            </li>
-            <li></li>
-            <button class="btn1">
-              <a href="reservation.html"><b>Reservation</b></a>
-            </button>
-          </ul>
-        </nav>
-      </header>
-      <main class="content">
-        <section>
-          <h1 class="center">Our Menu</h1>
-          <div class="para">
-            <p>Massa praesent sit suspendisse ac volutpat amet. <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;Commodo elit at non neque ullamcorper id.</p>
-          </div>
-        </section>
-      </main>
+    </header>
+
+
+    <!-- appetizer Start -->
+    <section class="container-fluid">
+        <div class="row">
+            <!-- Appetizer component -->
+            <div class="col-md-4 col-12 p-0 position-relative order-1">
+                <img src="/img/appetizer-menu-header.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-12 mt-5 mx-md-4 order-2">
+                <h1 class="fw-semibold" style="font-size: 50px; margin-top: 50px;">
+                    Appetizer
+                </h1>
+                <p class="text-start mt-4" style="font-size: 17px; color: #aaacad;">
+                    Lorem sollicitudin quis amet, pellentesque et proin. Venenatis iaculis nibh neque sit<br />
+                    ullamcorper ac dictumst. Amet dignissim nunc gravida eu vestibulum elit. In lorem<br />
+                    ornare sollicitudin aliquet nunc cum massa.
+                </p>
+
+                <!-- Cake component -->
+                <div class=" d-flex flex-column flex-md-row align-items-start mt-5 me-sm-5 order-3">
+                    <div class="position-relative me-sm-5 me-md-4 mb-lg-3 mb-md-0">
+                        <img src="/img/nyus-cheesy-fruits-cake.png" width="110px" alt="">
+                    </div>
+                    <div>
+                        <h6 class="mx-lg-3 text-dark nunito-custom text-start text-nowrap fw-bold text-uppercase"
+                            style="letter-spacing: 2px;">
+                            Signature
+                        </h6>
+                        <h4 class="mx-lg-3 nunito-custom mb-lg-0 text-start  text-nowrap" style="font-size: 24px;">
+                            Strawberry And Grapes Cake
+                        </h4>
+                        <p class="mx-lg-3 text-start my-2" style="font-size: 17px; color: #aaacad;">
+                            In lorem ornare sollicitudin aliquet nunc cum massa.
+                        </p>
+                        <p class="mx-lg-3 fw-bold text-start my-2" style="font-size: 18px; font-family: cursive;">
+                            9.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-lg-5 ">
+            <!-- 1 -->
+            <div class="row ">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Lemon and Garlic Green Beans - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">15.00</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Lemon / Garlic / Beans
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Lemon and Garlic Green Beans - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">15.00</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Lemon / Garlic / Beans
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Lemon and Garlic Green Beans - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">15.00</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Lemon / Garlic / Beans
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="row ">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Bacon-wrapped Shrimp with Garlic - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">21.50</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Bacon / Shrimp / Garlic
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Wrapped Shrimp with Garlic - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">21.50</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Bacon / Shrimp / Garlic
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Bacon Shrimp with Garlic - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">21.50</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Bacon / Shrimp / Garlic
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="row ">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Lamb-beef Kofka Skewers with Tzatziki - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">18.50</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Lamb / Wine / Butter
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Lamb-beef Kofka Skewers with Tzatziki - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">18.50</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Lamb / Wine / Butter
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Lamb-beef Skewers - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">18.50</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Lamb / Wine / Butter
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div class="row ">
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Imported Oysters Grill - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">20.00</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Oysters / Veggie / Ginger
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Imported Oysters Grill (5 Pieces) - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">20.00</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Oysters / Veggie / Ginger
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <div class="d-flex flex-column align-items-start">
+                        <div>
+                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
+                                Imported Oysters Grill (5 Pieces) - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">20.00</label>
+                            </h6>
+                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
+                                Oysters / Veggie / Ginger
+                            </p>
+                            <hr class="my-2" style="border: 1px dashed #232323;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+   
     </section>
-    <section>
-      
-      <div class="layout">
-        <div class="fillter">
-          <p>Filter Option</p>
-          <div class="filter-section">
-            <label>
-              <input type="checkbox" name="filter1" value="filter1">
-              Filter 1
-            </label>
-            <label>
-              <input type="checkbox" name="filter2" value="filter2">
-              Filter 2
-            </label>
-            <label>
-              <input type="checkbox" name="filter3" value="filter3">
-              Filter 3
-            </label>
-            <label>
-              <input type="checkbox" name="filter4" value="filter4">
-              Filter 4
-            </label>
-            <button class="apply-button">Apply</button>
-          </div>
+
+
+    <!-- appetizer End -->
+
+
+
+    <!-- reservation start -->
+    <section
+        style="background-image: url('/img/testimonail-hero-bg.jpg'); background-size: cover; background-position: center center; background-repeat: no-repeat; height: 80vh;">
+        <div class="container-xxl py-5 mb-5 d-flex justify-content-center">
+            <div class="container my-5 py-5 text-center">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 mx-auto">
+                        <h1 class="display-3 text-white fw-semibold nunito-custom " style="font-size: 55px;">Reservation
+                        </h1>
+                        <p class="text-white animated sliderInLeft mb-4 pb-2 mt-4">Neque elit, rutrum in laoreet nec
+                            eget scelerisque volutpat sit. Bibendum tincidunt a scelerisque consectetur ultrices
+                            elementum pulvinar non. </p>
+                        <a href="/reservation.html"
+                            class="btn btn-outline-light px-3 text-uppercase rounded-0 custom-font"
+                            style="padding: 10px;">Book a table now</a>
+                        <p class="text-white custom-font mt-lg-5">Telephone Reservations</p>
+                        <h1 class="text-white "
+                            style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 60px;">
+                            12 34 56 7890</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-container">
-          <div class="card">
-            <img src="img/food1.jpg" alt="Card Image" class="card-img">
-            <div class="cart-icon">
-             <a href="Cart.html"> <i class="fas fa-shopping-cart"></i></a>
-          </div>
-            <div class="card-content">
-              <h2 class="card-title">Subway classic sub platter</h2>
-              <p class="card-text"><a href="">See details</a></p>
-              <div class="btn-icon">
-                <div class="number">
-                  <span id="decrement">-</span>
-                  <input type="text" value="0" id="counter" readonly>
-                  <span id="increment">+</span>
-                </div>
-                <div class="card-button">
-                  <button class="add-button">$15.85</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/food2.jpg" alt="Card Image" class="card-img">
-            <div class="cart-icon">
-              <i class="fas fa-shopping-cart"></i>
-          </div>
-            <div class="card-content">
-              <h2 class="card-title">Subway classic sub platter</h2>
-              <p class="card-text"><a href="">See details</a></p>
-              <div class="btn-icon">
-                <div class="number">
-                  <span id="decrement">-</span>
-                  <input type="text" value="0" id="counter" readonly>
-                  <span id="increment">+</span>
-                </div>
-                <div class="card-button">
-                  <button class="add-button">$15.85</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/food3.jpg" alt="Card Image" class="card-img">
-            <div class="cart-icon">
-              <i class="fas fa-shopping-cart"></i>
-          </div>
-            <div class="card-content">
-              <h2 class="card-title">Subway classic sub platter</h2>
-              <p class="card-text"><a href="">See details</a></p>
-              <div class="btn-icon">
-                <div class="number">
-                  <span id="decrement">-</span>
-                  <input type="text" value="0" id="counter" readonly>
-                  <span id="increment">+</span>
-                </div>
-                <div class="card-button">
-                  <button class="add-button">$15.85</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/food2.jpg" alt="Card Image" class="card-img">
-            <div class="cart-icon">
-              <i class="fas fa-shopping-cart"></i>
-          </div>
-            <div class="card-content">
-              <h2 class="card-title">Subway classic sub platter</h2>
-              <p class="card-text"><a href="">See details</a></p>
-              <div class="btn-icon">
-                <div class="number">
-                  <span id="decrement">-</span>
-                  <input type="text" value="0" id="counter" readonly>
-                  <span id="increment">+</span>
-                </div>
-                <div class="card-button">
-                  <button class="add-button">$15.85</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/food1.jpg" alt="Card Image" class="card-img">
-            <div class="cart-icon">
-              <i class="fas fa-shopping-cart"></i>
-          </div>
-            <div class="card-content">
-              <h2 class="card-title">Subway classic sub platter</h2>
-              <p class="card-text"><a href="">See details</a></p>
-              <div class="btn-icon">
-                <div class="number">
-                  <span id="decrement">-</span>
-                  <input type="text" value="0" id="counter" readonly>
-                  <span id="increment">+</span>
-                </div>
-                <div class="card-button">
-                  <button class="add-button">$15.85</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img src="img/food3.jpg" alt="Card Image" class="card-img">
-            <div class="cart-icon">
-              <i class="fas fa-shopping-cart"></i>
-          </div>
-            <div class="card-content">
-              <h2 class="card-title">Subway classic sub platter</h2>
-              <p class="card-text"><a href="">See details</a></p>
-              <div class="btn-icon">
-                <div class="number">
-                  <span id="decrement">-</span>
-                  <input type="text" value="0" id="counter" readonly>
-                  <span id="increment">+</span>
-                </div>
-                <div class="card-button">
-                  <button class="add-button">$15.85</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
-    <script src="js/app.js"></script>
-  </body>
+
+    <!-- reservation end -->
+
+
+
+
+
+    <!-- Footer start -->
+
+    <!-- Footer end -->
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz4fnFO9gybRa3x8b0X4aFf8KY1yD9bg39H1jqBSYJTp4lg2f5ZdUmS9gQ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-H2Q4VPr+FfQk8e/4+YAl4ikANuBz8Jp7tLOpcD6XZBx1zFV9vv9qw5iCq9rHBOJt"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS (with Popper.js) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Additional JS libraries -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+</body>
+
 </html>
