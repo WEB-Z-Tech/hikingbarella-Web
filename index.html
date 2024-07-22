@@ -48,13 +48,17 @@
             <ul id="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="menu.html" class="nav-link">Menu &#9662;</a>
-                    <ul class="dropdown-content">
-                        <li><a href="menu.html">Light</a></li>
-                        <li><a href="menu.html">Dark</a></li>
+                <div class="nav-item dropdown">
+                    <a href="/menu.html" class="nav-link mx-3" id="menuDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menu
+                        <i class="fa fa-chevron-down ms-2 bg- small-icon" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu rounded-0" aria-labelledby="menuDropdown" style="border-top: 3px solid gold;">
+                        <li><a class="dropdown-item menu-theme" href="/menu.html" data-theme="light">Light Theme</a></li>
+                        <li><a class="dropdown-item menu-theme" href="/menu.html?theme=dark" data-theme="dark">Dark Theme</a></li>
                     </ul>
-                </li>
+                </div>
                 <li><a href="contact.html">Contact</a></li>
                 <li>
                     <div class="search-container">

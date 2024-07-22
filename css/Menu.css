@@ -47,6 +47,9 @@
 .dropdown-menu:hover{
   background-color: #e0dada;
 }
+.menu-theme:hover{
+  color: gold;
+}
 /* Dark Theme Styles */
 body.dark-theme {
   background-color: #121212;
@@ -80,4 +83,7 @@ body.dark-theme .dropdown-item:hover{
 
 body.dark-theme .all-container-details{
   color: white;
+}
+body.dark-theme .signature-text{
+  color: goldenrod;
 }
