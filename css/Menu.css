@@ -1,6 +1,15 @@
-body{
+ /* Light Theme Styles */
+ body {
   overflow-x: hidden;
-  background-color:#e9ecef;
+  background-color: #e9ecef;
+}
+.all-container {
+  background-color: #e9ecef; 
+  color: #212529; 
+}
+.food-list-container {
+  background-color: #e9ecef; 
+  color: #212529;
 }
 .custom-font {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -10,25 +19,24 @@ body{
   color: white;
 }
 .nunito-custom {
-font-family: "Nunito", sans-serif;
-font-optical-sizing: auto;
-font-weight: 700; 
-font-style: normal;
-font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
 }
-
 .menu-item .item-name {
   font-size: 0.9rem;
-  font-weight:600;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 .menu-item .item-price {
-  font-size: 0.8rem; 
-  font-weight:600;
+  font-size: 0.8rem;
+  font-weight: 600;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .menu-item .item-description {
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
   color: #6c757d;
 }
 .menu-item .dotted-line {
@@ -36,4 +44,40 @@ font-size: 14px;
   margin: 15px 0;
   width: 285px;
 }
+.dropdown-menu:hover{
+  background-color: #e0dada;
+}
+/* Dark Theme Styles */
+body.dark-theme {
+  background-color: #121212;
+  color: #ffffff;
+}
 
+body.dark-theme .menu-item {
+  color: #ffffff;
+  background-color: #333;
+}
+body.dark-theme .all-container {
+  background-color: #121212; 
+  color: #ffffff; 
+}
+body.dark-theme .food-list-container {
+  background-color: #121212;
+}
+body.dark-theme .dropdown-menu{
+  background-color: #121212;
+  border: 1px solid white;
+}
+body.dark-theme .dropdown-item{
+  color: whitesmoke;
+}
+body.dark-theme .dropdown-menu:hover{
+  background-color: #2d2b2b;
+}
+body.dark-theme .dropdown-item:hover{
+  color: #000;
+}
+
+body.dark-theme .all-container-details{
+  color: white;
+}
