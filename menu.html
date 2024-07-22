@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
+    <style>
+        a {
+            text-decoration: none;
+            color: white;
+    
+        }
+    
+        a:hover {
+            color: yellow;
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Menu - Hiking Bar & Restaurant</title>
-    <style>
-        .nunito-custom {
-            font-family: "Nunito", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 700;
-            font-style: normal;
-            font-size: 14px;
-        }
-        
-    </style>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -26,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/Menu.css">
 
     <!-- Google Font -->
     <link rel="stylesheet"
@@ -103,223 +105,329 @@
 
 
     <!-- appetizer Start -->
-    <section class="container-fluid">
-        <div class="row">
+    <section class="container-fluid" style="background-color: #e9ecef;">
+        <div class="row mb-5">
             <!-- Appetizer component -->
-            <div class="col-md-4 col-12 p-0 position-relative order-1">
+            <div class="col-md-4 col-12 p-0 position-relative order-1 ">
                 <img src="/img/appetizer-menu-header.png" alt="" class="img-fluid">
             </div>
-            <div class="col-md-6 col-12 mt-5 mx-md-4 order-2">
+            <div class="col-md-6 col-12 mt-lg-5 mx-md-4 order-2">
                 <h1 class="fw-semibold" style="font-size: 50px; margin-top: 50px;">
                     Appetizer
                 </h1>
-                <p class="text-start mt-4" style="font-size: 17px; color: #aaacad;">
+                <p class="text-start text-muted mt-4" style="font-size: 17px; color: #aaacad;">
                     Lorem sollicitudin quis amet, pellentesque et proin. Venenatis iaculis nibh neque sit<br />
                     ullamcorper ac dictumst. Amet dignissim nunc gravida eu vestibulum elit. In lorem<br />
                     ornare sollicitudin aliquet nunc cum massa.
                 </p>
 
                 <!-- Cake component -->
-                <div class=" d-flex flex-column flex-md-row align-items-start mt-5 me-sm-5 order-3">
+                <div class=" d-flex flex-column flex-md-row align-items-start mt-5 me-sm-5 order-3 ">
                     <div class="position-relative me-sm-5 me-md-4 mb-lg-3 mb-md-0">
                         <img src="/img/nyus-cheesy-fruits-cake.png" width="110px" alt="">
                     </div>
                     <div>
-                        <h6 class="mx-lg-3 text-dark nunito-custom text-start text-nowrap fw-bold text-uppercase"
+                        <h6 class="mx-lg-3 nunito-custom text-start text-nowrap fw-bold text-uppercase"
                             style="letter-spacing: 2px;">
                             Signature
                         </h6>
                         <h4 class="mx-lg-3 nunito-custom mb-lg-0 text-start  text-nowrap" style="font-size: 24px;">
                             Strawberry And Grapes Cake
                         </h4>
-                        <p class="mx-lg-3 text-start my-2" style="font-size: 17px; color: #aaacad;">
+                        <p class="mx-lg-3 text-start my-2 text-muted" style="font-size: 17px;">
                             In lorem ornare sollicitudin aliquet nunc cum massa.
                         </p>
-                        <p class="mx-lg-3 fw-bold text-start my-2" style="font-size: 18px; font-family: cursive;">
+                        <p class="mx-lg-3 fw-bold text-start my-2" style="font-size: 16px; font-family: cursive ;">
                             9.00
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-lg-5 ">
-            <!-- 1 -->
-            <div class="row ">
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Lemon and Garlic Green Beans - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">15.00</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Lemon / Garlic / Beans
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
+
+        <div class="container mt-lg-5 mb-lg-5 mt-sm-5 mb-sm-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</span></div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Lemon and Garlic Green Beans - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">15.00</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Lemon / Garlic / Beans
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</span></div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Lemon and Garlic Green Beans - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">15.00</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Lemon / Garlic / Beans
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
                 </div>
-            </div>
-            <!-- 2 -->
-            <div class="row ">
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Bacon-wrapped Shrimp with Garlic - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">21.50</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Bacon / Shrimp / Garlic
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">BACON-WRAPPED SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Wrapped Shrimp with Garlic - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">21.50</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Bacon / Shrimp / Garlic
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">WRAPPED SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Bacon Shrimp with Garlic - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">21.50</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Bacon / Shrimp / Garlic
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">BACON SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF SKEWERS <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL (5 PIECES) <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL (5 PIECES) <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
                 </div>
             </div>
-            <!-- 3 -->
-            <div class="row ">
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Lamb-beef Kofka Skewers with Tzatziki - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">18.50</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Lamb / Wine / Butter
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Lamb-beef Kofka Skewers with Tzatziki - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">18.50</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Lamb / Wine / Butter
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Lamb-beef Skewers - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">18.50</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Lamb / Wine / Butter
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
+    <!-- appetizer End -->
+
+    <!-- main courses Start -->
+    <section class="container-fluid mt-0" style="background-color: #e9ecef;">
+        <div class="row mb-5">
+            <!-- course component -->
+            <div class="col-md-4 col-12 p-0 position-relative order-1 ">
+                <img src="/img/main-courses-menu-header-img.png" alt="" class="img-fluid">
             </div>
-            <!-- 4 -->
-            <div class="row ">
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Imported Oysters Grill - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">20.00</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Oysters / Veggie / Ginger
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
+            <div class="col-md-6 col-12 mt-lg-5 mx-md-4 order-2">
+                <h1 class="fw-semibold" style="font-size: 50px; margin-top: 50px;">
+                    Main Courses
+                </h1>
+                <p class="text-start text-muted mt-4" style="font-size: 17px; color: #aaacad;">
+                    Lorem sollicitudin quis amet, pellentesque et proin. Venenatis iaculis nibh neque sit<br />
+                    ullamcorper ac dictumst. Amet dignissim nunc gravida eu vestibulum elit. In lorem <br />ornare
+                    sollicitudin aliquet nunc cum massa.
+                </p>
+
+                <!-- Cake component -->
+                <div class=" d-flex flex-column flex-md-row align-items-start mt-5 me-sm-5 order-3 ">
+                    <div class="position-relative me-sm-5 me-md-4 mb-lg-3 mb-md-0">
+                        <img src="/img/nyus-toasted-bread-with-grape.png" width="110px" alt="">
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Imported Oysters Grill (5 Pieces) - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">20.00</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Oysters / Veggie / Ginger
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 mb-4">
-                    <div class="d-flex flex-column align-items-start">
-                        <div>
-                            <h6 class="text-dark nunito-custom text-nowrap fw-bold text-uppercase" style="letter-spacing: 2px; font-size: 13px;">
-                                Imported Oysters Grill (5 Pieces) - <label style="font-family: Georgia, 'Times New Roman', Times, serif; font-size:11px;">20.00</label>
-                            </h6>
-                            <p class="my-2" style="font-size: 14px; color: #aaacad;">
-                                Oysters / Veggie / Ginger
-                            </p>
-                            <hr class="my-2" style="border: 1px dashed #232323;">
-                        </div>
+                    <div>
+                        <h6 class="mx-lg-3  nunito-custom text-start text-nowrap fw-bold text-uppercase"
+                            style="letter-spacing: 2px;">
+                            Signature
+                        </h6>
+                        <h4 class="mx-lg-3 nunito-custom mb-lg-0 text-start  text-nowrap" style="font-size: 24px;">
+                            NYUS Toasted Bread with Grape
+                        </h4>
+                        <p class="mx-lg-3 text-start text-muted my-2" style="font-size: 17px;">
+                            In lorem ornare sollicitudin aliquet nunc cum massa.
+                        </p>
+                        <p class="mx-lg-3 fw-bold text-start my-2"
+                            style="font-size: 16px; font-family: Georgia,cursive, Times, serif ;">
+                            8.50
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        
-   
+
+        <div class="container mt-lg-5 mb-lg-5 mt-sm-5 mb-sm-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</span></div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</span></div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">BACON-WRAPPED SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">WRAPPED SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">BACON SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF SKEWERS <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL (5 PIECES) <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL (5 PIECES) <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- main courses End -->
 
+    <!-- dessert courses Start -->
+    <section class="container-fluid mt-0" style="background-color: #e9ecef;">
+        <div class="row mb-5">
+            <!-- course component -->
+            <div class="col-md-4 col-12 p-0 position-relative order-1 ">
+                <img src="/img/dessert-menu-header-img.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-6 col-12 mt-lg-5 mx-md-4 order-2">
+                <h1 class="fw-semibold" style="font-size: 50px; margin-top: 50px;">
+                    Dessert
+                </h1>
+                <p class="text-start mt-4 text-muted" style="font-size: 17px; ">
+                    Lorem sollicitudin quis amet, pellentesque et proin. Venenatis iaculis nibh neque sit<br />
+                    ullamcorper ac dictumst. Amet dignissim nunc gravida eu vestibulum elit. In lorem <br />ornare
+                    sollicitudin aliquet nunc cum massa.
+                </p>
 
-    <!-- appetizer End -->
+                <!-- Cake component -->
+                <div class=" d-flex flex-column flex-md-row align-items-start mt-5 me-sm-5 order-3 ">
+                    <div class="position-relative me-sm-5 me-md-4 mb-lg-3 mb-md-0">
+                        <img src="/img/nyus-cheesy-fruits-cake.png" width="110px" alt="">
+                    </div>
+                    <div>
+                        <h6 class="mx-lg-3  nunito-custom text-start text-nowrap fw-bold text-uppercase"
+                            style="letter-spacing: 2px;">
+                            Signature
+                        </h6>
+                        <h4 class="mx-lg-3 nunito-custom mb-lg-0 text-start  text-nowrap" style="font-size: 24px;">
+                            Cheesy Fruits Cake
+                        </h4>
+                        <p class="mx-lg-3 text-start text-muted my-2" style="font-size: 17px;">
+                            In lorem ornare sollicitudin aliquet nunc cum massa.
+                        </p>
+                        <p class="mx-lg-3 fw-bold text-start my-2" style="font-size: 15px; font-family:cursive;">
+                            10.00
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
+        <div class="container mt-lg-5 mb-lg-5 mt-sm-5 mb-sm-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</span></div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</span></div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LEMON AND GARLIC GREEN BEANS <span class="item-price">- 15.00</div>
+                    <div class="item-description">Lemon / Garlic / Beans</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">BACON-WRAPPED SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">WRAPPED SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">BACON SHRIMP WITH GARLIC <span class="item-price">- 21.50</div>
+                    <div class="item-description">Bacon / Shrimp / Garlic</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">LAMB-BEEF SKEWERS <span class="item-price">- 18.50</div>
+                    <div class="item-description">Lamb / Wine / Butter</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL (5 PIECES) <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL (5 PIECES) <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+                <div class="col-lg-4 col-md-6 menu-item">
+                    <div class="item-name">IMPORTED OYSTERS GRILL <span class="item-price">- 20.00</div>
+                    <div class="item-description">Oysters / Veggie / Ginger</div>
+                    <div class="dotted-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- dessert courses End -->
 
     <!-- reservation start -->
     <section
@@ -346,14 +454,147 @@
         </div>
         </div>
     </section>
-
     <!-- reservation end -->
 
+    <!-- Footer -->
+    <footer class="page-footer font-small py-5 lighten-5" style="background-color:black;">
+
+        <!-- Footer Links -->
+        <div class="container text-md-left mt-5 text-light">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 col-xl-4 mb-4 pe-5">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">Company name</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p class="text-start">Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet,
+                        consectetur
+                        adipisicing elit.</p>
+                    <p>
+                        <!-- Facebook -->
+                        <a class="">
+                            <i class="fab fa-facebook-f text-warning  mx-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter text-warning white-text mx-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g text-warning white-text mx-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in text-warning white-text mx-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram text-warning white-text"> </i>
+                        </a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-3 pe-5  mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Products</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-start" style="width: 60px;">
+                    <div class="text-start">
+                        <p>
+                            <a class="dark-grey-text" href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a class="dark-grey-text" href="#!">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a class="dark-grey-text" href="#!">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a class="dark-grey-text" href="#!">Bootstrap Angular</a>
+                        </p>
+                    </div>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 pe-5 mb-4 pe-5">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Your Account</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Become an Affiliate</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Shipping Rates</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Help</a>
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home text-warning mr-3"></i> New York, NY 10012, US
+                    </p>
+                    <p>
+                        <i class="fas fa-envelope text-warning mr-3"></i> info@example.com
+                    </p>
+                    <p>
+                        <i class="fas fa-phone text-warning mr-3"></i> + 01 234 567 88
+                    </p>
+                    <p>
+                        <i class="fas fa-print text-warning mr-3"></i> + 01 234 567 89
+                    </p>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="container">
+            <div class="footer-copyright text-white py-3 text-start">
+                <p>Copyright © 2024 Hikin Bar & Restaurant </p>
+            </div>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
 
-
-
-    <!-- Footer start -->
+    <!--content end-->
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
 
     <!-- Footer end -->
 
