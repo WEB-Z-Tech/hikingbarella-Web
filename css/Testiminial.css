@@ -4,16 +4,16 @@ body{
 .custom-font {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
-    font-size: small;
     font-weight: bolder;
-    color: white;
+    color: #878787;
   }
   .nunito-custom {
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 700; 
+  letter-spacing: 2px;
+  font-weight: bolder;  
   font-style: normal;
-font-size: 14px;
+  color: #757575;
 }
 .toggle-btn {
   font-size: 24px;
